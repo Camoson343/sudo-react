@@ -16,7 +16,7 @@ import React, { Component } from 'react';
    }
 
    deleteToDo(index){
-     this.setState({ this.state.todos.filter(todo => todo !== index) })
+     this.setState({ todos: this.state.todos.filter(todo => todo !== index) })
    }
 
    handleChange(e){
