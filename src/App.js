@@ -16,7 +16,10 @@ import React, { Component } from 'react';
    }
 
    deleteToDo(index){
-     this.setState({ todos: this.state.todos.filter(todo => todo !== index) })
+     const todos = this.state.todos.slice();
+     const todoToDelete = todos[index];
+     const newToDos = todos.filter( todo => todo !== todoToDelete);
+     this.setState({todos: newTodos})
    }
 
    handleChange(e){
@@ -55,5 +58,3 @@ import React, { Component } from 'react';
  }
 
  export default App;
- //help plz
- // redoredo
