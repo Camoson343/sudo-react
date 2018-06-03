@@ -19,7 +19,7 @@ import React, { Component } from 'react';
      const todos = this.state.todos.slice();
      const todoToDelete = todos[index];
      const newToDos = todos.filter( todo => todo !== todoToDelete);
-     this.setState({todos: newTodos})
+     this.setState({todos: newToDos})
    }
 
    handleChange(e){
@@ -58,3 +58,4 @@ import React, { Component } from 'react';
  }
 
  export default App;
+// assignment
